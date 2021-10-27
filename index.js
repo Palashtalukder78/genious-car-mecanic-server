@@ -59,7 +59,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Running Jinious Server')
 })
-
+app.get('/hello', (req, res) => {
+    res.send("Hello updated here")
+})
 app.listen(port, () => {
     console.log("Start with: ", port)
 })
